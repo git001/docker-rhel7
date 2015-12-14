@@ -1,4 +1,4 @@
-FROM rhel7
+FROM library/rhel7
 
 
 CMD ["/bin/sh"]
