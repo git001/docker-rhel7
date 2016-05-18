@@ -1,7 +1,8 @@
 FROM registry.access.redhat.com/rhel7:latest
 
 RUN set -x \
-  && yum -y install cronie
+  && yum -y install cronie \
+  && chmod 777  /var/run/
 
 
 #CMD ["/bin/sh"]
