@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/rhel7:latest
 
 RUN set -x \
-  && yum install cronie
+  && yum -y install cronie
 
 
 #CMD ["/bin/sh"]
