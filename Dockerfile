@@ -2,7 +2,7 @@
 FROM base-centos7:latest
 
 RUN set -x \
-  && yum search php \
+  && yum -y install httpd-tool php \
   && chmod 777  /var/run/
 
 
