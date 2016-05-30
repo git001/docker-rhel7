@@ -1,7 +1,8 @@
-FROM registry.access.redhat.com/rhel7:latest
+#FROM registry.access.redhat.com/rhel7:latest
+FROM base-centos7:latest
 
 RUN set -x \
-  && yum -y install cronie \
+  && yum search php \
   && chmod 777  /var/run/
 
 
