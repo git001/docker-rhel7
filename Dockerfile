@@ -1,9 +1,8 @@
-#FROM registry.access.redhat.com/rhel7:latest
-FROM base-centos7:latest
+FROM registry.access.redhat.com/rhel7:latest
+#FROM base-centos7:latest
 
 RUN set -x \
-  && yum -y install httpd-tool php \
-  && chmod 777  /var/run/
+  && yum -y install socat 
 
 
 #CMD ["/bin/sh"]
